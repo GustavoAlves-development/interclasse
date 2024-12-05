@@ -1,0 +1,158 @@
+/* Estilos principais permanecem */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.futsal { background-color: #D8F9D2; }
+.handebol { background-color: #FFCAB9; }
+.volei { background-color: #C2E2FF; }
+.basquete { background-color: #FFB8B8; }
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para o ranking */
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team {
+    background-color: #C2E2FF;
+    margin: 0 5%;
+    width: 7%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team img {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+}
+
+h2 {
+    background-color: #C2E2FF;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 15px;
+    width: 10%;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #0084FF;
+    height: 4vh;
+    border: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: red;
+    padding: 10px 0;
+}
+
+.riscado{
+    border-bottom: 2px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    hr{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .buttons button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+
+    .team {
+        width: 20%;
+    }
+
+    h2 {
+        width: 80%;
+        font-size: 18px;
+    }
+    footer{
+        position: relative;
+    }
+    .riscado{
+        width: 50%;
+        margin: 0 25%;
+    }
+    .logo img{
+        margin: 0;
+    }
+}
